@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>King Birendra Biography</title>
+</head>
+
+<body>
+
+    <h1>Biography of King Birendra</h1>
+
+    <video id="myVideo" width="600" controls>
+        <source src="YTDown.com_Shorts_Short-biography-about-King-Birendra-BBS-_Media_5P7ITmXyHg_001_720p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <button onclick="playVideo()">▶ Play</button>
+    <button onclick="pauseVideo()">⏸ Pause</button>
+    <button onclick="restartVideo()">🔄 Restart</button>
+    <button onclick="muteVideo()">🔇 Mute / Unmute</button>
+
+    <script>
+        const video = document.getElementById("myVideo");
+
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+
+        function restartVideo() {
+            video.currentTime = 0;
+            video.play();
+        }
+
+        function muteVideo() {
+            video.muted = !video.muted;
+        }
+    </script>
+
+</body>
+</html>
